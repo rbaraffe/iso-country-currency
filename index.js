@@ -8,51 +8,51 @@ const dataJSON = {
   AE: {
     countryName: "United Arab Emirates",
     currency: "AED",
-    symbol: "AED",
+    symbol: "د. إ",
     dateFormat: "dd/MM/yyyy",
     numericCode: 784,
   },
   AF: {
     countryName: "Afghanistan",
     currency: "AFN",
-    symbol: "Af",
+    symbol: "؋",
     numericCode: 971,
   },
   AG: {
     countryName: "Antigua and Barbuda",
     currency: "XCD",
-    symbol: "XCD",
+    symbol: "$",
     numericCode: 951,
   },
   AI: {
     countryName: "Anguilla",
     currency: "XCD",
-    symbol: "XCD",
+    symbol: "$",
     numericCode: 951,
   },
   AL: {
     countryName: "Albania",
     currency: "ALL",
-    symbol: "ALL",
+    symbol: "L",
     dateFormat: "yyyy-MM-dd",
     numericCode: 8,
   },
   AM: {
     countryName: "Armenia",
     currency: "AMD",
-    symbol: "AMD",
+    symbol: "֏",
     numericCode: 51,
   },
   AO: {
     countryName: "Angola",
     currency: "AOA",
-    symbol: "AOA",
+    symbol: "Kz",
     numericCode: 973,
   },
   AR: {
     countryName: "Argentina",
     currency: "ARS",
-    symbol: "AR$",
+    symbol: "$",
     dateFormat: "dd/MM/yyyy",
     numericCode: 32,
   },
@@ -79,7 +79,7 @@ const dataJSON = {
   AW: {
     countryName: "Aruba",
     currency: "AWG",
-    symbol: "AWG",
+    symbol: "ƒ",
     numericCode: 533,
   },
   AX: {
@@ -91,7 +91,7 @@ const dataJSON = {
   AZ: {
     countryName: "Azerbaijan",
     currency: "AZN",
-    symbol: "man.",
+    symbol: "₼",
     numericCode: 944,
   },
   BA: {
@@ -104,7 +104,7 @@ const dataJSON = {
   BB: {
     countryName: "Barbados",
     currency: "BBD",
-    symbol: "BBD",
+    symbol: "Bds $",
     numericCode: 52,
   },
   BD: {
@@ -129,7 +129,7 @@ const dataJSON = {
   BG: {
     countryName: "Bulgaria",
     currency: "BGN",
-    symbol: "BGN",
+    symbol: "лв",
     dateFormat: "yyyy-M-d",
     numericCode: 975,
   },
@@ -161,7 +161,7 @@ const dataJSON = {
   BM: {
     countryName: "Bermuda",
     currency: "BMD",
-    symbol: "BMD",
+    symbol: "$",
     numericCode: 60,
   },
   BN: {
@@ -193,13 +193,13 @@ const dataJSON = {
   BS: {
     countryName: "Bahamas",
     currency: "BSD",
-    symbol: "BSD",
+    symbol: "$",
     numericCode: 44,
   },
   BT: {
     countryName: "Bhutan",
     currency: "BTN",
-    symbol: "BTN",
+    symbol: "Nu.",
     numericCode: 64,
   },
   BV: {
@@ -211,13 +211,13 @@ const dataJSON = {
   BW: {
     countryName: "Botswana",
     currency: "BWP",
-    symbol: "BWP",
+    symbol: "P",
     numericCode: 72,
   },
   BY: {
     countryName: "Belarus",
     currency: "BYN",
-    symbol: "BYN",
+    symbol: "Br",
     dateFormat: "d.M.yyyy",
     numericCode: 933,
   },
@@ -230,14 +230,14 @@ const dataJSON = {
   CA: {
     countryName: "Canada",
     currency: "CAD",
-    symbol: "CA$",
+    symbol: "$",
     dateFormat: "dd/MM/yyyy",
     numericCode: 124,
   },
   CC: {
     countryName: "Cocos Islands",
     currency: "AUD",
-    symbol: "AU$",
+    symbol: "$",
     numericCode: 36
   },
   CD: {
@@ -293,7 +293,7 @@ const dataJSON = {
   CN: {
     countryName: 'China',
     currency: 'CNY',
-    symbol: 'CN¥',
+    symbol: '¥',
     dateFormat: "yyyy-M-d",
     numericCode: 156,
   },
@@ -314,7 +314,7 @@ const dataJSON = {
   CU: {
     countryName: 'Cuba',
     currency: 'CUP',
-    symbol: 'CUP',
+    symbol: '₱',
     numericCode: 192,
   },
   CV: {
@@ -372,7 +372,7 @@ const dataJSON = {
   DM: {
     countryName: 'Dominica',
     currency: 'XCD',
-    symbol: 'XCD',
+    symbol: 'EC$',
     numericCode: 951,
   },
   DO: {
