@@ -1589,11 +1589,6 @@ const dataJSON = {
   },
 };
 
-const currencyAndSymbol = ['currency', 'symbol'];
-const allSearchParams = currencyAndSymbol.concat(['countryName', 'dateFormat']);
-
-
-
 exports.getAllISOCodes = function() {
     const keys = Object.keys(dataJSON);
 
@@ -1624,55 +1619,42 @@ exports.getAllInfoByISO = function(isoCode) {
         dateFormat: ISOObject.dateFormat
       };
     }
-    throw new Error('ISO2 code wasn\'t found');
+    return null;
 };
 
 exports.getParamByISO = function(iso, param) {
-  checkParam(param, allSearchParams);
-
   if(dataJSON.hasOwnProperty(iso.toUpperCase())) {
     return dataJSON[iso.toUpperCase()][param];
   }
 
-  throw new Error('ISO2 code wasn\'t found');
+  return null;
 };
 
 exports.getISOByParam = function(param, value) {
-  checkParam(param, allSearchParams);
-
   for(let key in dataJSON) {
     if(dataJSON.hasOwnProperty(key) && dataJSON[key][param] === value) {
       return key;
     }
   }
-  throw new Error(value + ' wasn\'t found in ' + param);
+  return null;
 };
 
 exports.getParamByParam = function(givenParam, givenParamValue, searchParam) {
-  checkParam(givenParam, allSearchParams);
-  checkParam(searchParam, allSearchParams);
-
   for(let key in dataJSON) {
     if(dataJSON.hasOwnProperty(key) && dataJSON[key][givenParam] === givenParamValue) {
       return dataJSON[key][searchParam];
     }
   }
-  throw new Error(givenParam + ' wasn\'t found in ' + givenParamValue);
+  return null;
 };
 
 exports.getAllCountriesByCurrencyOrSymbol = function(param, value) {
   const countriesArray = [];
 
-  checkParam(param, currencyAndSymbol);
-
   for(let key in dataJSON) {
     if(dataJSON.hasOwnProperty(key) && dataJSON[key][param] === value) {
       countriesArray.push(dataJSON[key].countryName) ;
     }
-  }
-
-  if(countriesArray.length === 0) {
-    throw new Error(value + ' wasn\'t found in' + param);
   }
 
   return countriesArray;
@@ -1682,23 +1664,11 @@ exports.getAllCountriesByCurrencyOrSymbol = function(param, value) {
 exports.getAllISOByCurrencyOrSymbol = function(param, value) {
   const ISOArray = [];
 
-  checkParam(param, currencyAndSymbol);
-
   for(let key in dataJSON) {
     if(dataJSON.hasOwnProperty(key) && dataJSON[key][param] === value) {
       ISOArray.push(key) ;
     }
   }
 
-  if(ISOArray.length === 0) {
-    throw new Error(value + ' wasn\'t found in' + param);
-  }
-
   return ISOArray;
 };
-
-function checkParam(param, paramArray) {
-  if(paramArray.indexOf(param) === -1) {
-    throw new Error('Invalid search param');
-  }
-}
